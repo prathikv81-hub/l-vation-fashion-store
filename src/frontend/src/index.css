@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=DM+Sans:wght@300;400;500;600&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --radius: 0.25rem;
+
+    /* Luxury fashion palette - ivory/champagne/charcoal */
+    --background: 0.957 0.012 75; /* ivory-beige #F3EBDD */
+    --foreground: 0.13 0.005 0; /* near-black #121212 */
+    --card: 0.965 0.008 75; /* soft off-white #F7F5F1 */
+    --card-foreground: 0.13 0.005 0;
+    --popover: 0.965 0.008 75;
+    --popover-foreground: 0.13 0.005 0;
+    --primary: 0.22 0.006 260; /* charcoal #1F2526 */
+    --primary-foreground: 0.957 0.012 75;
+    --secondary: 0.88 0.028 80; /* champagne beige #D6C2A6 */
+    --secondary-foreground: 0.22 0.006 260;
+    --muted: 0.91 0.015 75;
+    --muted-foreground: 0.47 0.018 60; /* gray-brown #6E6A63 */
+    --accent: 0.84 0.038 78; /* champagne accent #D6C2A6 */
+    --accent-foreground: 0.22 0.006 260;
+    --destructive: 0.577 0.245 27.325;
+    --destructive-foreground: 0.985 0 0;
+    --border: 0.87 0.018 75;
+    --input: 0.87 0.018 75;
+    --ring: 0.84 0.038 78;
+    --chart-1: 0.646 0.222 41.116;
+    --chart-2: 0.6 0.118 184.704;
+    --chart-3: 0.398 0.07 227.392;
+    --chart-4: 0.828 0.189 84.429;
+    --chart-5: 0.769 0.188 70.08;
+    --sidebar: 0.22 0.006 260;
+    --sidebar-foreground: 0.957 0.012 75;
+    --sidebar-primary: 0.84 0.038 78;
+    --sidebar-primary-foreground: 0.22 0.006 260;
+    --sidebar-accent: 0.28 0.008 260;
+    --sidebar-accent-foreground: 0.957 0.012 75;
+    --sidebar-border: 0.32 0.008 260;
+    --sidebar-ring: 0.84 0.038 78;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: "DM Sans", sans-serif;
+  }
+
+  h1,
+  h2,
+  h3,
+  .font-serif {
+    font-family: "Playfair Display", serif;
+  }
+}
+
+@layer utilities {
+  .luxury-serif {
+    font-family: "Playfair Display", serif;
+    letter-spacing: 0.05em;
+  }
+  .luxury-sans {
+    font-family: "DM Sans", sans-serif;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    font-weight: 500;
+  }
+}
